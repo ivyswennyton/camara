@@ -1,0 +1,41 @@
+<div class="container">
+    <form [formGroup]="userForm">
+      <ul class="flex-outer">
+        <li>
+          <label for="first-name">Apelido</label>
+          <input type="text" id="first-name" placeholder="Enter your first name here" formControlName="username">
+        </li>
+        <li>
+          <label for="last-name">Nome</label>
+          <input type="text" id="last-name" placeholder="Enter your last name here" formControlName="name">
+        </li>
+        <li>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email here" formControlName="email"> 
+        </li>
+        <li>
+          <label for="phone">Website</label>
+          <input type="tel" id="phone" placeholder="Enter your phone here" formControlName="website">
+        </li>
+        <li formGroupName="address">
+            <label for="phone">Cidade</label>
+            <input type="tel" id="phone" placeholder="Enter your phone here" formControlName="city">
+        </li>
+        <li formGroupName="address">
+            <label for="phone">Rua</label>
+            <input type="tel" id="phone" placeholder="Enter your phone here" formControlName="street">
+        </li>
+        <li formGroupName="address">
+            <label for="phone">Cep</label>
+            <input type="tel" id="phone" placeholder="Enter your phone here" formControlName="zipcode">
+        </li>
+        <li formGroupName="company">
+            <label for="phone">Companhia</label>
+            <input type="tel" id="phone" placeholder="Enter your phone here" formControlName="name">
+        </li>
+        <li>
+            <button type="submit" [routerLink]="['/user/list']"g>Voltar</button>
+        </li>
+      </ul>
+    </form>
+  </div>

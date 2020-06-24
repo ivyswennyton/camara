@@ -1,0 +1,20 @@
+<h1>Lista</h1>
+
+  <table style="width:100%">
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Website</th>
+      <th>Detalhes</th>
+    </tr>
+    <tr *ngFor="let users of users">
+      <td>{{ users?.id }}</td>
+      <td>{{ users?.name }}</td>
+      <td>{{ users?.email }}</td>
+      <td>{{ users?.website }}</td>
+      <a href="" [routerLink]="['/user/detail', users.id]">view</a>
+    </tr>
+  </table>
+
+  
