@@ -9,7 +9,6 @@ const routes: Routes = [
   { path: 'user/list', component: ListComponent },
   { path: 'user/detail/:id', component: DetailComponent },
   { path: '**', component: NotFoundComponent }
-
 ];
 
 @NgModule({
